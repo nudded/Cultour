@@ -1,4 +1,4 @@
-server 'zeus.ugent.be', user: 'gandalf', roles: %w{web app db},
+server 'zeus.ugent.be', user: 'cultour', roles: %w{web app db},
   ssh_options: {
     forward_agent: true,
     auth_methods: ['publickey'],
@@ -6,7 +6,7 @@ server 'zeus.ugent.be', user: 'gandalf', roles: %w{web app db},
   }
 
 set :rails_env, 'production'
-set :unicorn_pid, '/var/run/unicorn/gandalf.pid'
+set :unicorn_pid, '/var/run/unicorn/cultour.pid'
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
